@@ -13,9 +13,9 @@ export default async function Home() {
   const data = await getData();
   return (
     <main className="flex h-[100dvh] flex-col items-center justify-center p-6 md:p-24 bg-neutral-900">
-      <blockquote className="font-bold text-[5vmin] text-white text-center text-balance text">
+      <blockquote className="font-bold text-2xl text-white text-center text-balance text">
         {data[0].q}
-        <footer className="font-semibold text-neutral-300 text-[3.5vmin]">{data[0].a}</footer>
+        <footer className="font-semibold text-neutral-300 text-base">{data[0].a}</footer>
       </blockquote>
     </main>
   );
